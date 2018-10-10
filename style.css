@@ -1,0 +1,89 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.container {
+    width: 100%;
+    height: 100%;
+}
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.items {
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+}
+.item {
+    padding: 1.5em;
+}
+.img_class {
+    width: 100%;
+    max-width: 25em;
+    height: auto;
+}
+.img_container {
+    position: relative;
+}
+.img_discount {
+    position: absolute;
+    max-width: 6em;
+    height: auto;
+    top: 0%;
+}
+.details_container {
+    position: relative;
+}
+.img_star_rate {
+    width: 6.5em;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+.img_hearth_rate {
+    width: 1em;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+.new_best_top {
+    width: 10em;
+}
+
+
+
+
