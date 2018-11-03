@@ -2,76 +2,155 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* General */
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
+
 p {
     font-size: 0.8rem;
 }
+
 h1 {
 
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    text-shadow: 0 1px 0 black; 
+    text-shadow: 0 1px 0 black;
     color: #757575;
     text-transform: uppercase;
 }
+
 h2 {
     padding: 2rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 4px;
-    text-shadow: 0 1px 0 black; 
+    text-shadow: 0 1px 0 black;
     color: #757575;
 }
+
 h3 {
     font-size: 2rem;
     letter-spacing: 3px;
     padding-bottom: 1rem;
     text-shadow: 0 1px 0 black;
 }
+
 h4 {
     padding-bottom: 2rem;
     text-align: center;
     font-size: 1rem;
     letter-spacing: 3px;
 }
+
 h5 {
     font-size: 0.8rem;
     font-weight: 600;
     padding: 0.4rem 0;
 }
+
 /* END General */
 body {
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
+
 .container {
     width: 100%;
     height: 100%;
 }
+
 header {
     min-height: 100vh;
     flex-direction: column;
@@ -82,48 +161,58 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /* Featured Products */
 .items {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
 .item {
     padding: 1.5rem;
 }
+
 .img_class {
-    max-width: 25rem;
+    max-width: 20rem;
     height: auto;
 }
+
 .img_container {
     position: relative;
 }
+
 .img_discount {
     position: absolute;
     max-width: 6rem;
     height: auto;
     top: 0%;
 }
+
 .details_container {
     position: relative;
 }
+
 .img_star_rate {
     max-width: 6.5rem;
     position: absolute;
     right: 0%;
     top: 50%;
 }
+
 .img_hearth_rate {
     max-width: 1rem;
     position: absolute;
     right: 0%;
     top: 0%;
 }
+
 /* END Featured Products */
 
 /* New Arrivals*/
-.new_arrivals_container {   
+.new_arrivals_container {
     justify-content: flex-start;
     align-items: center;
     background-image: url(img/new_arrivals1.jpg);
@@ -133,13 +222,15 @@ header {
     background-size: cover;
     height: 70vh;
 }
+
 .new_arrivals {
     margin: 5rem;
     color: #595959;
 }
+
 .shop {
     padding: 2rem;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 1.3rem;
     color: #FF00FF;
     background: transparent;
@@ -147,19 +238,23 @@ header {
     letter-spacing: 1.7px;
     border: 1.5px solid #595959;
 }
+
 /* END New Arrivals*/
 
 /* Categories */
 .categories-photos {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
+
 .category-item {
     padding: 1.5em;
     max-width: 30rem;
     height: auto;
 }
+
 /* END Categories */
 
 /* New, best, Top */
@@ -167,20 +262,24 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .newest {
     padding: 2rem;
     margin: 1.5rem;
     flex-direction: column;
     border: 1px solid #808080;
 }
+
 .newest_item {
     justify-content: center;
     align-items: center;
     padding-right: 6rem;
 }
+
 .newest_item-details {
     padding-right: 0.7rem;
 }
+
 .new-best-top-img {
     padding: 0.7rem;
     align-self: center;
@@ -188,6 +287,7 @@ header {
     height: auto;
     border-radius: 50%;
 }
+
 /* END New, best, Top */
 
 /* Footer */
@@ -201,29 +301,35 @@ footer {
     padding: 1.5rem;
     font-size: 0.9rem;
 }
+
 .important-info {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
 }
+
 .footer-item {
     padding: 1.2rem;
     list-style: none;
     flex-grow: 1;
 }
+
 .footer-title {
     color: #cccccc;
     text-transform: uppercase;
     font-weight: 700;
     border-width: 5px;
 }
+
 .owner-container {
     align-self: center;
 }
+
 .owner-name {
     font-size: 2rem;
     font-weight: 700;
     color: #cccccc;
     padding-bottom: 0.5rem;
 }
+
 /* END Footer */
