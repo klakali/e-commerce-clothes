@@ -4,5 +4,5 @@ function openPanel() {
     this.classList.toggle("singlePanel--open");
 }
 
-allPanels.forEach(singlePanel => singlePanel.addEventListener("mouseover", openPanel))
+allPanels.forEach(singlePanel => singlePanel.addEventListener("click", openPanel))
 

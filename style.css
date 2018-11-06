@@ -333,33 +333,39 @@ body {
 
 /* Gallery Panel */
 .panel1 {
-    background-image: url(img/gallery-panel-6.jpg);
+    background-image: url(img/gallery-panel-3.jpg);
 }
 
 .panel2 {
-    background-image: url(img/gallery-panel-6.jpg);
+    background-image: url(img/gallery-panel-2.jpg);
 }
 
 .panel3 {
-    background-image: url(img/gallery-panel-6.jpg);
+    background-image: url(img/gallery-panel-4.jpg);
 }
 
 .panel4 {
-    background-image: url(img/gallery-panel-6.jpg);
+    background-image: url(img/gallery-panel-1.jpg);
 }
 
-.panel5 {
-    background-image: url(img/gallery-panel-6.jpg);
-}
 
 .gallery {
     min-height: 70vh;
     display: flex;
 }
 
+.gallery:hover {
+    cursor: pointer;
+}
+
 .gallery__singlePanel {
+
+    background-position: center;
+    background-size: cover;
+    transition:
+        flex 0.7s cubic-bezier(.42,.97,.52,1.49),
+        background 0.2s;
     flex: 1;
-    background-position: top;
 }
 
 .singlePanel--open {
