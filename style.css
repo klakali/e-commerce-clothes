@@ -349,6 +349,7 @@ body {
 
 
 .gallery {
+    max-width: 100%; 
     min-height: 70vh;
     display: flex;
 
@@ -359,7 +360,7 @@ body {
 }
 
 .gallery__singlePanel {
-    width: 25%;
+    max-width: 25%;
     background-position: center;
     background-size: cover;
     transition: background .25s ease-in-out;
@@ -377,7 +378,7 @@ body {
 }
 
 .singlePanel--open {
-    width: 100%;
+    max-width: 100%;
     background-size: cover;
     justify-content: flex-end;
     align-items: flex-end;
