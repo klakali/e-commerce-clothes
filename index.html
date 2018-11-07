@@ -8,6 +8,7 @@
     <meta name="description" content="HTML / CSS / JavaScript Exercise">
     <meta name="author" content="klakali">
     <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <header class="showcast flex">
         <h1 class="header--main">Lorem ipsum</h1>
         <h2 class="header--medium">A classic e-commerce</h2>
-        <button class="shopNowButton">Shop now</button>
+        <button class="shopNowButton" href="">Shop now</button>
     </header>
     <section class="featuredItems flex">
         <h2 class="featuredItems__header--medium header--medium">Featured Products</h2>
@@ -68,6 +69,7 @@
 
         <div class="item">
             <img class="item__img" src="img/item.jpg" alt="">
+            <img class="item__discount" src="img/discount.png" alt="">
             <div class="item__details">
                 <img src="img/hearth.png" class="item__details__hearthRate" alt="">
                 <h5 class="header--smallest">Black T-Shirt</h5>
@@ -79,6 +81,7 @@
 
         <div class="item">
             <img class="item__img" src="img/item.jpg" alt="">
+            <img class="item__discount" src="img/discount.png" alt="">
             <div class="item__details">
                 <img src="img/hearth.png" class="item__details__hearthRate" alt="">
                 <h5 class="header--smallest">Black T-Shirt</h5>
@@ -87,6 +90,7 @@
                 <img src="img/star_rate.jpg" class="item__details__starRate" alt="">
             </div>
         </div>
+
     </section>
 
     <section class="newArrivals flex">
@@ -99,10 +103,18 @@
     <section class="categories">
         <h2 class="header--medium">Categories</h2>
         <div class="categories__photos flex">
-            <img src="img/category.jpg" class="category__item" alt="">
-            <img src="img/category1.jpg" class="category__item" alt="">
-            <img src="img/category2.jpg" class="category__item" alt="">
-            <img src="img/category3.jpg" class="category__item" alt="">
+            <div class="category__item category__item1">
+                <p class="category__item__hoverText">Lorem ipsum</p>
+            </div>
+            <div class="category__item category__item2">
+                <p class="category__item__hoverText">Lorem ipsum</p>
+            </div>
+            <div class="category__item category__item3">
+                <p class="category__item__hoverText">Lorem ipsum</p>
+            </div>
+            <div class="category__item category__item4">
+                <p class="category__item__hoverText">Lorem ipsum</p>
+            </div>
         </div>
     </section>
 
@@ -116,9 +128,7 @@
         <div class="gallery__singlePanel panel3">
             <p class="singlePanel__header--closed">Style</p>
         </div>
-        <div class="gallery__singlePanel panel4">
-            <p class="singlePanel__header--closed">Period.</p>
-        </div>
+
     </section>
 
     <section class="rankingContainer flex">
@@ -213,7 +223,7 @@
             <div class="footer__info__item owner">
                 <p class="owner__name">klakali</p>
                 <p class="footer__title">@2018 by klakali</p>
-                <p class="footer__title">Photos: photos.icons8.com & unsplash.com</p>
+                <p class="footer__title">Photos: icons8.com & unsplash.com</p>
             </div>
         </div>
     </footer>
