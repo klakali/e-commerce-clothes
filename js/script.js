@@ -1,8 +1,10 @@
 var allPanels = document.querySelectorAll(".gallery__singlePanel");
-var galleryTexts = document.querySelectorAll(".singlePanel__header--open");
+var galleryTexts = Array.from(document.querySelectorAll(".singlePanel__header--closed"));
 
 function openPanel() {
+    galleryTexts.forEach(galleryText => galleryText.classList.toggle("singlePanel__header--open"));
     this.classList.toggle("singlePanel--open");
 }
 
-allPanels.forEach(singlePanel => singlePanel.addEventListener("click", openPanel))
+allPanels.forEach(singlePanel => singlePanel.addEventListener("click", openPanel));
+
